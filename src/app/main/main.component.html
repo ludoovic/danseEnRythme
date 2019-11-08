@@ -1,0 +1,38 @@
+<h1>- Rythme Danse -</h1>
+<div class="container h-100">
+  <div class="d-flex justify-content-center h-100">
+    <div class="searchbar">
+      <form [formGroup]="searchForm" (ngSubmit)="onSearch()">
+        <input type="text" name="isearch" formControlName="isearch" placeholder="Rechercher..." />
+        <a href="#" class="search_icon" (click)="onSearch()">
+          <i class="fas fa-camera" name="search"></i>
+        </a>
+      </form>
+    </div>
+  </div>
+</div>
+
+<ul *ngFor="let danse of danses" class="list-group">
+  <li class="list-group-item" (click)="onSelect(danse)">
+    {{ danse }}
+    <div *ngIf="danseSelected == danse">
+      <ul class="list-group">
+        <li class="list-group-item">
+          Débutant
+          <div>
+            <iframe width="260" height="115" src="https://www.youtube.com/embed/jJiS71yrnyk" frameborder="2"
+              allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          </div>
+        </li>
+        <li class="list-group-item">
+          Intermédiaire
+          <div></div>
+        </li>
+        <li class="list-group-item">
+          Avancé
+          <div></div>
+        </li>
+      </ul>
+    </div>
+  </li>
+</ul>
