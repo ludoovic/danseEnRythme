@@ -1,9 +1,14 @@
-<h1>- Rythme Danse -</h1>
+<h1>- Danses & Rythmes -</h1>
 <div class="container h-100">
   <div class="d-flex justify-content-center h-100">
     <div class="searchbar">
       <form [formGroup]="searchForm" (ngSubmit)="onSearch()">
-        <input type="text" name="isearch" formControlName="isearch" placeholder="Rechercher..." />
+        <input
+          type="text"
+          name="isearch"
+          formControlName="isearch"
+          placeholder="Rechercher..."
+        />
         <a href="#" class="search_icon" (click)="onSearch()">
           <i class="fas fa-camera" name="search"></i>
         </a>
@@ -20,8 +25,14 @@
         <li class="list-group-item">
           Débutant
           <div>
-            <iframe width="260" height="115" src="https://www.youtube.com/embed/jJiS71yrnyk" frameborder="2"
-              allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <iframe
+              width="190"
+              height="125"
+              src="https://www.youtube.com/embed/jJiS71yrnyk"
+              frameborder="4"
+              allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen
+            ></iframe>
           </div>
         </li>
         <li class="list-group-item">
