@@ -1,14 +1,9 @@
-<h1>- Dansez pas à pas ! -</h1>
+<h1>Space Rythmes</h1>
 <div class="container h-100">
   <div class="d-flex justify-content-center h-100">
     <div class="searchbar">
       <form [formGroup]="searchForm" (ngSubmit)="onSearch()">
-        <input
-          type="text"
-          name="isearch"
-          formControlName="isearch"
-          placeholder="recherche..."
-        />
+        <input type="text" name="isearch" formControlName="isearch" placeholder="recherche..." />
         <a href="#" class="search_icon" (click)="onSearch()">
           <i class="fa fa-search" name="search"></i>
         </a>
@@ -18,12 +13,7 @@
 </div>
 <br />
 <div class="container">
-  <button
-    type="button"
-    class="btn btn-info"
-    data-toggle="collapse"
-    data-target="#badeb"
-  >
+  <button type="button" class="btn btn-info" data-toggle="collapse" data-target="#badeb">
     Bachata débutant
   </button>
   <div id="badeb" class="collapse">
@@ -36,15 +26,10 @@
   </div>
   <br />
   <br />
-  <button
-    type="button"
-    class="btn btn-info"
-    data-toggle="collapse"
-    data-target="#bainter"
-  >
+  <button type="button" class="btn btn-info" data-toggle="collapse" data-target="#baint">
     Bachata intermédiaire
   </button>
-  <div id="bainter" class="collapse">
+  <div id="baint" class="collapse">
     <ul>
       <li class="list-group-item">video1</li>
       <li class="list-group-item">video2</li>
@@ -54,12 +39,7 @@
   </div>
   <br />
   <br />
-  <button
-    type="button"
-    class="btn btn-info"
-    data-toggle="collapse"
-    data-target="#baav"
-  >
+  <button type="button" class="btn btn-info" data-toggle="collapse" data-target="#baav">
     Bachata avancé
   </button>
   <div id="baav" class="collapse">
@@ -70,18 +50,12 @@
       <li class="list-group-item">video4</li>
     </ul>
   </div>
-
   <br />
   <br />
-  <button
-    type="button"
-    class="btn btn-info"
-    data-toggle="collapse"
-    data-target="#baav"
-  >
+  <button type="button" class="btn btn-info" data-toggle="collapse" data-target="#fode">
     Forro débutant
   </button>
-  <div id="baav" class="collapse">
+  <div id="fode" class="collapse">
     <ul>
       <li class="list-group-item">video1</li>
       <li class="list-group-item">video2</li>
@@ -91,15 +65,10 @@
   </div>
   <br />
   <br />
-  <button
-    type="button"
-    class="btn btn-info"
-    data-toggle="collapse"
-    data-target="#baav"
-  >
+  <button type="button" class="btn btn-info" data-toggle="collapse" data-target="#foint">
     Forro intermédiaire
   </button>
-  <div id="baav" class="collapse">
+  <div id="foint" class="collapse">
     <ul>
       <li class="list-group-item">video1</li>
       <li class="list-group-item">video2</li>
@@ -109,15 +78,10 @@
   </div>
   <br />
   <br />
-  <button
-    type="button"
-    class="btn btn-info"
-    data-toggle="collapse"
-    data-target="#baav"
-  >
+  <button type="button" class="btn btn-info" data-toggle="collapse" data-target="#foav">
     Forro avancé
   </button>
-  <div id="baav" class="collapse">
+  <div id="foav" class="collapse">
     <ul>
       <li class="list-group-item">video1</li>
       <li class="list-group-item">video2</li>
@@ -127,17 +91,17 @@
   </div>
   <br />
   <br />
-  <button
-    type="button"
-    class="btn btn-info"
-    data-toggle="collapse"
-    data-target="#rocde"
-  >
+  <button type="button" class="btn btn-info" data-toggle="collapse" data-target="#rocde">
     Rock débutant
   </button>
   <div id="rocde" class="collapse">
     <ul>
-      <li class="list-group-item">video1</li>
+      <li class="list-group-item">
+        <div>
+          <iframe width="250" height="140" src="https://www.youtube.com/embed/jJiS71yrnyk" frameborder="4"
+            allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+      </li>
       <li class="list-group-item">video2</li>
       <li class="list-group-item">video3</li>
       <li class="list-group-item">video4</li>
@@ -145,12 +109,7 @@
   </div>
   <br />
   <br />
-  <button
-    type="button"
-    class="btn btn-info"
-    data-toggle="collapse"
-    data-target="#rocin"
-  >
+  <button type="button" class="btn btn-info" data-toggle="collapse" data-target="#rocin">
     Rock intermédiaire
   </button>
   <div id="rocin" class="collapse">
@@ -163,12 +122,7 @@
   </div>
   <br />
   <br />
-  <button
-    type="button"
-    class="btn btn-info"
-    data-toggle="collapse"
-    data-target="#rocav"
-  >
+  <button type="button" class="btn btn-info" data-toggle="collapse" data-target="#rocav">
     Rock avancé
   </button>
   <div id="rocav" class="collapse">
@@ -181,12 +135,7 @@
   </div>
   <br />
   <br />
-  <button
-    type="button"
-    class="btn btn-info"
-    data-toggle="collapse"
-    data-target="#salde"
-  >
+  <button type="button" class="btn btn-info" data-toggle="collapse" data-target="#salde">
     Salsa débutant
   </button>
   <div id="salde" class="collapse">
@@ -199,12 +148,7 @@
   </div>
   <br />
   <br />
-  <button
-    type="button"
-    class="btn btn-info"
-    data-toggle="collapse"
-    data-target="#salin"
-  >
+  <button type="button" class="btn btn-info" data-toggle="collapse" data-target="#salin">
     Salsa intermédiaire
   </button>
   <div id="salin" class="collapse">
@@ -217,12 +161,7 @@
   </div>
   <br />
   <br />
-  <button
-    type="button"
-    class="btn btn-info"
-    data-toggle="collapse"
-    data-target="#salav"
-  >
+  <button type="button" class="btn btn-info" data-toggle="collapse" data-target="#salav">
     Salsa avancé
   </button>
   <div id="salav" class="collapse">
@@ -235,12 +174,7 @@
   </div>
   <br />
   <br />
-  <button
-    type="button"
-    class="btn btn-info"
-    data-toggle="collapse"
-    data-target="#kizde"
-  >
+  <button type="button" class="btn btn-info" data-toggle="collapse" data-target="#kizde">
     Kizomba débutant
   </button>
   <div id="kizde" class="collapse">
@@ -253,12 +187,7 @@
   </div>
   <br />
   <br />
-  <button
-    type="button"
-    class="btn btn-info"
-    data-toggle="collapse"
-    data-target="#kizin"
-  >
+  <button type="button" class="btn btn-info" data-toggle="collapse" data-target="#kizin">
     Kizomba intermédiaire
   </button>
   <div id="kizin" class="collapse">
@@ -271,12 +200,7 @@
   </div>
   <br />
   <br />
-  <button
-    type="button"
-    class="btn btn-info"
-    data-toggle="collapse"
-    data-target="#kizav"
-  >
+  <button type="button" class="btn btn-info" data-toggle="collapse" data-target="#kizav">
     Kizomba avancé
   </button>
   <div id="kizav" class="collapse">
