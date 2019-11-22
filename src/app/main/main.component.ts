@@ -10,105 +10,98 @@ export class MainComponent implements OnInit {
   isearch: FormControl;
   msgRep = 0;
   rawDanses = ['Rock', 'Salsa', 'Forro', 'Kizomba', 'bachata'];
-  dictDanses = {
-    danse: [
-      {
-        nomDanse: 'rock',
-        niveau: [
-          {
-            nomNiveau: 'débutant',
-            urlVideos: 'lien1;lien2;lien3; lien4; lien5; lien6; lien7; lien8'
-          },
-          {
-            nomNiveau: 'intermédiaire',
-            urlVideos:
-              'lien9;lien10;lien11;lien12;lien13; lien14; lien15; lien16'
-          },
-          {
-            nomNiveau: 'avancé',
-            urlVideos:
-              'lien17; lien18; lien19;lien20;lien21;lien22;lien23; lien24'
-          }
-        ]
-      },
-      {
-        nomDanse: 'salsa',
-        niveau: [
-          {
-            nomNiveau: 'débutant',
-            urlVideos: 'lien1;lien2;lien3; lien4; lien5; lien6; lien7; lien8'
-          },
-          {
-            nomNiveau: 'intermédiaire',
-            urlVideos:
-              'lien9;lien10;lien11;lien12;lien13; lien14; lien15; lien16'
-          },
-          {
-            nomNiveau: 'avancé',
-            urlVideos:
-              'lien17; lien18; lien19;lien20;lien21;lien22;lien23; lien24'
-          }
-        ]
-      },
-      {
-        nomDanse: 'forro',
-        niveau: [
-          {
-            nomNiveau: 'débutant',
-            urlVideos: 'lien1;lien2;lien3; lien4; lien5; lien6; lien7; lien8'
-          },
-          {
-            nomNiveau: 'intermédiaire',
-            urlVideos:
-              'lien9;lien10;lien11;lien12;lien13; lien14; lien15; lien16'
-          },
-          {
-            nomNiveau: 'avancé',
-            urlVideos:
-              'lien17; lien18; lien19;lien20;lien21;lien22;lien23; lien24'
-          }
-        ]
-      },
-      {
-        nomDanse: 'kizomba',
-        niveau: [
-          {
-            nomNiveau: 'débutant',
-            urlVideos: 'lien1;lien2;lien3; lien4; lien5; lien6; lien7; lien8'
-          },
-          {
-            nomNiveau: 'intermédiaire',
-            urlVideos:
-              'lien9;lien10;lien11;lien12;lien13; lien14; lien15; lien16'
-          },
-          {
-            nomNiveau: 'avancé',
-            urlVideos:
-              'lien17; lien18; lien19;lien20;lien21;lien22;lien23; lien24'
-          }
-        ]
-      },
-      {
-        nomDanse: 'bachata',
-        niveau: [
-          {
-            nomNiveau: 'débutant',
-            urlVideos: 'lien1;lien2;lien3; lien4; lien5; lien6; lien7; lien8'
-          },
-          {
-            nomNiveau: 'intermédiaire',
-            urlVideos:
-              'lien9;lien10;lien11;lien12;lien13; lien14; lien15; lien16'
-          },
-          {
-            nomNiveau: 'avancé',
-            urlVideos:
-              'lien17; lien18; lien19;lien20;lien21;lien22;lien23; lien24'
-          }
-        ]
-      }
-    ]
-  };
+  listDanses = [
+    {
+      nomDanse: 'rock',
+      niveau: [
+        {
+          nomNiveau: 'débutant',
+          urlVideos: 'lien1;lien2;lien3; lien4; lien5; lien6; lien7; lien8'
+        },
+        {
+          nomNiveau: 'intermédiaire',
+          urlVideos: 'lien9;lien10;lien11;lien12;lien13; lien14; lien15; lien16'
+        },
+        {
+          nomNiveau: 'avancé',
+          urlVideos:
+            'lien17; lien18; lien19;lien20;lien21;lien22;lien23; lien24'
+        }
+      ]
+    },
+    {
+      nomDanse: 'salsa',
+      niveau: [
+        {
+          nomNiveau: 'débutant',
+          urlVideos: 'lien1;lien2;lien3; lien4; lien5; lien6; lien7; lien8'
+        },
+        {
+          nomNiveau: 'intermédiaire',
+          urlVideos: 'lien9;lien10;lien11;lien12;lien13; lien14; lien15; lien16'
+        },
+        {
+          nomNiveau: 'avancé',
+          urlVideos:
+            'lien17; lien18; lien19;lien20;lien21;lien22;lien23; lien24'
+        }
+      ]
+    },
+    {
+      nomDanse: 'forro',
+      niveau: [
+        {
+          nomNiveau: 'débutant',
+          urlVideos: 'lien1;lien2;lien3; lien4; lien5; lien6; lien7; lien8'
+        },
+        {
+          nomNiveau: 'intermédiaire',
+          urlVideos: 'lien9;lien10;lien11;lien12;lien13; lien14; lien15; lien16'
+        },
+        {
+          nomNiveau: 'avancé',
+          urlVideos:
+            'lien17; lien18; lien19;lien20;lien21;lien22;lien23; lien24'
+        }
+      ]
+    },
+    {
+      nomDanse: 'kizomba',
+      niveau: [
+        {
+          nomNiveau: 'débutant',
+          urlVideos: 'lien1;lien2;lien3; lien4; lien5; lien6; lien7; lien8'
+        },
+        {
+          nomNiveau: 'intermédiaire',
+          urlVideos: 'lien9;lien10;lien11;lien12;lien13; lien14; lien15; lien16'
+        },
+        {
+          nomNiveau: 'avancé',
+          urlVideos:
+            'lien17;lien18;lien19;lien20;lien21;lien22;lien23;lien24;lien17;lien18;lien19;lien20;lien21;lien22;lien23;lien24; '
+        }
+      ]
+    },
+    {
+      nomDanse: 'bachata',
+      niveau: [
+        {
+          nomNiveau: 'débutant',
+          urlVideos: 'lien1;lien2;lien3; lien4; lien5; lien6; lien7; lien8'
+        },
+        {
+          nomNiveau: 'intermédiaire',
+          urlVideos: 'lien9;lien10;lien11;lien12;lien13; lien14; lien15; lien16'
+        },
+        {
+          nomNiveau: 'avancé',
+          urlVideos:
+            'lien17; lien18; lien19;lien20;lien21;lien22;lien23; lien24'
+        }
+      ]
+    }
+  ];
   danses = this.rawDanses;
   danseSelected = '';
 
